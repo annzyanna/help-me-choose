@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang=eng>
+<meta charset=utf-8>
+<title>Help me choose</title>
+  <body>
+    <h1>Help me choose between...</h1>
+    <div>
+      <div>
+        <input placeholder="Something"></input>
+      </div>
+      <button>Add</button>
+    </div>
+    <button>Go!</button>
+  </body>
+</html>
