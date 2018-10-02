@@ -1,0 +1,39 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.inputSection{
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+input{
+  margin-top: 10px;
+}
+
+.addOption{
+  margin-top: 10px;
+  background-color: white;
+}
+
+.goOption{
+  border-radius: 12px;
+  border: 2px solid #4CAF50;
+}
