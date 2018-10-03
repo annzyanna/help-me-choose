@@ -6,14 +6,34 @@
 <link href="./main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-    <h1>Help me choose between...</h1>
+    <h1 class="titleClick">Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button class="goOption">Go!</button>
     <br>
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/WelshCorgi.jpeg">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+      $(function() {
+         $('.resultSection').hide()
+
+         var add_option = function() {
+           $('.inputs').append('<input></input>')
+         }
+
+         $('.addOption').click(add_option)
+
+         var title_click= function(){
+           $
+         }
+
+
+      })
+      </script>
+    </body>
 </html>
