@@ -6,7 +6,7 @@
 <link href="./main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-    <h1 class="titleClick">Help me choose between...</h1>
+    <h1 class="title">Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
@@ -14,9 +14,10 @@
       <button class="addOption">Add</button>
     </div>
     <div class="resultSection"></div>
-    <button class="goOption">Go!</button>
+    <button class="submit">Go!</button>
     <br>
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/WelshCorgi.jpeg">
+
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script>
       $(function() {
@@ -28,11 +29,19 @@
 
          $('.addOption').click(add_option)
 
-         var title_click= function(){
-           $
-         }
-
-
+         var options = []
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.title').text("The winner is:")
+          $('.resultSection').text(winner)
+        }
+        $('.submit').click(submit)
       })
       </script>
     </body>
