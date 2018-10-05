@@ -1,4 +1,6 @@
 body{
+  background-color:  #b3d9ff;
+  background-image: linear-gradient(to bottom right, #66b3ff, #b3d9ff, white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +16,7 @@ h1{
 }
 
 .inputSection{
-  margin: 50px 0px 80px 0px;
+  margin: 50px 0px 30px 0px;
   width: 400px;
 }
 
@@ -34,8 +36,9 @@ input{
 }
 
 .submit{
+  font-size: 18px;
   border-radius: 12px;
-  border: 2px solid #4CAF50;
+  border: 2px solid #1a8cff;
 }
 
 .resultSection{

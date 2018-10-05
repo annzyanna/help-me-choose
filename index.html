@@ -6,6 +6,7 @@
 <link href="./main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
+    <div id="grad1"></div>
     <h1 class="title">Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
@@ -22,11 +23,10 @@
       <script>
       $(function() {
          $('.resultSection').hide()
-
+         
          var add_option = function() {
            $('.inputs').append('<input></input>')
          }
-
          $('.addOption').click(add_option)
 
          var options = []
